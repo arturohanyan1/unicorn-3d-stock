@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #E5E5E5;
+}
+
+#addEditMainDiv {
+  background: #E5E5E5;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#cabinetSide {
+  padding: 20px;
+}
+
+.cabinetBtn {
+  display: block;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 40px;
+  background: linear-gradient(230.95deg, #4B6CB7 -0.37%, #182848 100%);
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.cabinetBtn:nth-child(2) {
+  background: #FFFFFF;
+  color: #2D3748;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+}
+
+.cabinetBtn:nth-child(2):hover {
+  color: #2D3748;
+}
+
+.cabinetBtn:nth-child(3) {
+  background: #E5E5E5;
+  font-style: normal;
+  color: #A0AEC0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  margin-bottom: 200px;  
+  box-shadow: 0px
+}
+
+.cabinetBtn:nth-child(3):hover {
+  color: #0f1e38;
+}
+
+.cabinetBtn:hover {
+  animation: pulse 1s;
+  color: white;
+}
+
+.circle {
+  background: #FFFFFF;
+  padding: 15px;
+  margin-right: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.circleListing {
+  background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+.circleSettings {
+  background: #FFFFFF;
+  padding: 15px;
+  margin-right: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+h4 {
+  margin: 30px 0px;
+}
+
+#addPictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.addPics {
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #C4C4C4;
+}
+
+.addPics img {
+  height: 100%;
+}
+
+.filedatasTitles {
+  font-size: medium;
+  font-weight: 700;
+  margin-right: 30px;
+  color: #0f1e38;
+}
+
+#addSaveBtn, #addDelBtn {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0px;
+  margin-bottom: 40px;
+}
+
+#addSaveBtn {
+  background-color: #2D3748;
+}
+
+#addSaveBtn:hover {
+  background-color: #2e4875;
+  animation: pulse 1s;
+}
+
+#addDelBtn {
+  background-color: #FB6363;
+}
+
+#addDelBtn:hover {
+  background-color: #cf2d2d;
+  animation: pulse 1s;
+}
+
+#addEditSide {
+  padding: 20px;
+}
+
+#floatTextarea {
+  height: 200px;
+}
+
+.icons {
+  color: white;
+  margin-left: 15px;
+}
+
+.navFlexDiv {
+  padding: 10px 50px;
+  background: linear-gradient(230.95deg, #4B6CB7 -0.37%, #182848 100%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.homeBtn a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .cabinetBtn:nth-child(3) {
+    background: #E5E5E5;
+    margin-bottom: 40px;  
+  }
+}
+ 

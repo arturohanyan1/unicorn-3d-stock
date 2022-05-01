@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="../style/myAccount.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<div class="row">
+  <div class="col-sm-12 navFlexDiv">
+    <div class="homeBtn">
+      <a href="/" class="btn btn-outline-light">Home</a>
+    </div>
+    <div class="iconBag">
+    <a href="/myAccount"><i class="fa-regular fa-user fa-2xl icons"></i></a>
+    <a href="#"><i class="fa-regular fa-heart fa-2xl icons"></i></a>
+    <a href="/basket"><i class="fa-solid fa-basket-shopping fa-2xl icons"></i></a>
+  </div>
+  </div>
+</div>
+<div id="accountMainDiv">
+  <div class="row">
+    <div class="col-sm-3">
+      <div id="cabinetSide" class="cabinetSide">
+        <a href="#" class="cabinetBtn"><span class="circle"></span>{{user.name}}</a>
+        {{#unless user.isCreater}}
+        <a href="/myAccount/downloads" class="cabinetBtn pad"><span class="circleListing"></span> Downlands</a>
+        {{/unless}}
+        {{#if user.isCreater}}
+        <a href="/myAccount/downloads" class="cabinetBtn"><span class="circleListing"></span> Downlands</a>
+        <a href="/myAccount/listings" class="cabinetBtn pad"><span class="circleListing"></span> Listings</a>
+        {{/if}}
+
+        <hr />
+        <a href="/myAccount/creator" class="cabinetBtn"><span class="circle"></span> Become Creator</a>
+        <a href="#" class="cabinetBtn"><span class="circle"></span> Become Maker</a>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <div id="addEditSide">
+        <p class="mb-3 downTitle">Downloads</p>
+        <div class="row my-4">
+          <div class="col">
+            <div id="accCards">
+              {{#each allBuysArr}}
+              <div class="card" style="width: 18rem;">
+                <img class="modelImg" src="/{{this.mainImage}}" class="card-img-top" alt="3d mdel" />
+                <div class="card-body">
+                  <h5 class="card-title">{{this.name}}</h5>
+                  <p class="card-text">{{this.description}}</p>
+                  <br />
+                  <h4 class="price">{{this.price}} $</h4>
+                  <a href="/listing/{{this.id}}"><button class="btn btn-secondary">DOWNLOAD</button></a>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+          <div class="pagination">
+            {{#each btnArr}}
+            <a class="paginationLink" href="{{this.href}}">{{this.name}}</a>
+            <br />
+            {{/each}}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

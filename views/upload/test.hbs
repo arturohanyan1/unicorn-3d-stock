@@ -1,0 +1,12 @@
+        <div style="display: flex; justify-content: space-around;">
+        {{#each targetListings}}
+        <div class="card" style="width: 18rem;">
+          <img class="modelImg" src="{{this.modelImage}}" class="card-img-top" alt="3d mdel">
+          <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text" style="padding-bottom: 30px;">{{this.description}}</p>
+            <a href="#"><button class="btn btn-secondary">BUY NOW</button></a>
+          </div>
+        </div>
+        {{/each}}
+        </div>

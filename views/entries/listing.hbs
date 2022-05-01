@@ -1,0 +1,104 @@
+<script defer src="../js/listing.js"></script>
+<link rel="stylesheet" href="../style/listing.css">
+
+
+<div class="row">
+  <div class="col-sm-12 navFlexDiv">
+    <div class="homeBtn">
+      <a href="/" class="btn btn-outline-light">Home</a>
+    </div>
+    <div class="iconBag">
+    <a href="/myAccount"><i class="fa-regular fa-user fa-2xl icons"></i></a>
+    <a href="#"><i class="fa-regular fa-heart fa-2xl icons"></i></a>
+    <a href="/basket"><i class="fa-solid fa-basket-shopping fa-2xl icons"></i></a>
+  </div>
+  </div>
+</div>
+<div id="listingMain" class="row">
+  <div class="col-md-7">
+    <div id="leftSide">
+      <div id="smallPics" class="listingPicDivs">
+        {{#each srcImg}}
+        <div class="smallPics"><img src="../{{this}}" alt="small 3d pic"></div>
+        {{/each}}
+      </div>
+      <div id="bigPic" class="listingPicDivs">
+        <div><img src="../{{srcImgZero}}" alt="big 3d pic" id="bigPicImg"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="row">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="rightSide">
+            <p id="modelName">{{name}}</p>
+            <p id="modelPrice">US$ {{price}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="listingOptionsTitles">Option 1</p>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="listingOptionsTitles">Option 2</p>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="listingOptionsTitles">Option 3</p>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="listingOptionsTitles">Quantity</p>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button id="listingBuyButton" type="button" class="btn">BUY NOW</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button data-id="{{id}}" id="listingAddButton" type="button" class="btn">ADD TO BASKET</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">{{description}}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

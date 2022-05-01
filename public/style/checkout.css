@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #E5E5E5;
+}
+
+#mainCheckout {
+  margin: 71px 101px;
+}
+
+.checkoutTitle {
+  font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 24px;
+letter-spacing: 0.15px;
+color: #000000;
+margin-bottom: 70px;
+}
+
+.checkTitles {
+  font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 35px;
+line-height: 24px;
+letter-spacing: 0.15px;
+color: #000000;
+display: block;
+margin-bottom: 21px;
+}
+
+.longInputs {
+  width: 550px;
+height: 37px;
+margin-bottom: 37px;
+border-radius: 8px;
+border: 2px solid #E5E5E5;
+box-sizing: border-box;
+margin-right: 53px;
+}
+
+.addressInp, .pascalCode {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.addrInpitems, .postalitems {
+  display: inline-block;
+}
+
+.shortInputs {
+  width: 269px;
+  height: 37px;
+  border: 2px solid #E5E5E5;
+box-sizing: border-box;
+  border-radius: 8px;
+  margin-right: 40px;
+}
+
+.chOutBtn button {
+  width: 481px;
+height: 52px;
+background-color: #2D3748;
+display: flex;
+border: none;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 8px;
+position: absolute;
+border-radius: 12px;
+color: #FFFFFF;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 150%;
+margin-top: 70px;
+margin-bottom: 150px;
+}
+
+.chOutBtn button:hover {
+  animation: pulse 1s;
+} 

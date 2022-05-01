@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #E5E5E5;
+}
+
+.allborders {
+  border: 1px solid black;
+}
+
+#listingMain {
+  margin: 20px;
+}
+
+.listingPicDivs {
+  padding: 10px;
+}
+
+#leftSide {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#smallPics {
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+#smallPics img {
+  width: 80%;
+  margin: 0% 10% 30%;
+  opacity: 0.8;
+}
+
+#smallPics img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#bigPic {
+  width: 85%;
+  min-height: 450px;
+}
+
+#bigPic img {
+  max-width: 100%;
+  min-width: 50%;
+}
+
+#modelName {
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 110%;
+}
+
+#modelPrice {
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 80%;
+}
+
+.listingOptionsTitles {
+  margin-top: 20px;
+  line-height: 80%;
+}
+
+.form-select {
+  background-color: #C4C4C4;
+}
+
+.form-select:hover {
+  cursor: pointer;
+  background-color: #cfcfcf;
+}
+
+#listingBuyButton {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #D7DFED;
+  font-weight: 700;
+}
+
+#listingBuyButton:hover {
+  background-color: #a8b9d6;
+}
+
+#listingAddButton {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #2D3748;
+  color: white;
+  font-weight: 700;
+}
+
+#listingAddButton:hover {
+  background-color: #234280;
+}
+
+#floatingTextarea {
+  background-color: #C4C4C4;
+  margin: 50px 0px;
+  height: 300px;
+}
+
+.form-floating label {
+  color: #000;
+  font-weight: bold;
+}
+
+.icons {
+  color: white;
+  margin-left: 15px;
+}
+
+.navFlexDiv {
+  padding: 10px 50px;
+  background: linear-gradient(230.95deg, #4B6CB7 -0.37%, #182848 100%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.homeBtn a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  #leftSide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  #bigPic {
+    width: 100%;
+  }
+
+  #smallPics {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}

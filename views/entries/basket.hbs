@@ -1,0 +1,113 @@
+<script defer src="../js/bascket.js"></script>
+<link rel="stylesheet" href="../style/bascket.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<div id="bascketMain">
+<div class="row">
+  <div class="col-sm-12 navFlexDiv">
+    <div class="homeBtn">
+      <a href="/" class="btn btn-outline-light">Home</a>
+    </div>
+    <div class="iconBag">
+    <a href="/myAccount"><i class="fa-regular fa-user fa-2xl icons"></i></a>
+    <a href="#"><i class="fa-regular fa-heart fa-2xl icons"></i></a>
+    <a href="/basket"><i class="fa-solid fa-basket-shopping fa-2xl icons"></i></a>
+  </div>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-md-6">
+      {{#each itemsArr}}
+      <div class="forOneModel" id="forOneModel{{id}}">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="bascketImg">
+              <img src="../{{srcImgZero}}" alt="model img">
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-10">
+                <div class="row">
+                  <div class="col">
+                    <p class="nameBascket">{{name}}</h4>
+                    <p class="bascketOptions">Option 1: Mounted</p>
+                    <p class="bascketOptions">Option 2: Scale 32</p>
+                    <p class="bascketOptions"><a href="#" class="editor">Edit</a></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <a href="#" class="saveOrRemove">Save for later</a>
+                  </div>
+                  <div class="col-sm-6">
+                    {{!-- <a href="/basket/delete/{{id}}" class="saveOrRemove">Remove</a> --}}
+                    <a data-id="{{id}}" class="saveOrRemove">Remove</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <input class="num" type="text" aria-valuemin="1" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <p class="bascketPrice">${{price}}</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div>
+              <div class="form-floating">
+                {{!-- poloji v konce id idishnik tovara dlya kajdogo textarea i label --}}
+                <textarea class="form-control txtArea" placeholder="Leave a comment here"
+                  id="floatingTextarea{{id}}"></textarea>
+                <label for="floatingTextarea{{id}}" class="basckettextareaLabel">Add a note</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    <div class="col-md-6">
+      <div class="bascketRside">
+        <div class="payDiv">
+          <div class="row">
+            <div class="col">
+              <p class="rsideTitle">How you will pay</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="cardOne">
+                <label class="form-check-label" for="cardOne">
+                  Klarna
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="cardTwo" checked>
+                <label class="form-check-label" for="cardTwo">
+                  Visa/MasterCard
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="totalItems">
+                <span class="itemsTot">items total</span>
+                <span class="itemsTot">${{priceSum}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="checkoutBtn">
+                <a href="basket/proceed">PROCEED TO CHECKOUT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
